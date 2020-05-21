@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // array of five favorite movies 
+        var movies = ["catch me if you can", "man on fire", "taken","lord of the rings", "the hobit"];
+        //array of five favorite places 
+        var travel = ["san fransisco","istanbul","dallas","dubai","egypt"];
+
+
+        // prompt to ask the user abou favorate movie
+        var movieGuess = prompt("What's your favorite movie?");
+
+        //changing the user input into lowercase
+        var movieGuessLower = movieGuess.toLowerCase();
+        
+        //checking the user input with that array and alerting the user with the answer
+        if (movies.indexOf(movieGuessLower)===-1) {
+            alert("Nah. I haven't seen it.");
+        } else {
+            alert ("YEAH I LOVE THAT MOVIE!");
+        }
+
+        // prompt to ask the user for the favorate place they traveled tp
+        var travelGuess = prompt("What's your favorite place you traveled to?");
+
+        //changing the user input into lowercase
+        var travelGuessLower = travelGuess.toLowerCase();
+
+        //checking the user input with that array and alerting the user with the answer
+        if (travel.indexOf(travelGuessLower)===-1) {
+            alert("I haven't been there, Looks like it's time for a trip");
+        } else {
+            alert ("YEAH That's one of my favorite places too");
+        }
+
+    </script>
+    
+</body>
+</html>
